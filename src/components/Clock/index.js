@@ -8,12 +8,12 @@ class Clock extends Component {
   }
 
   componentDidMount() {
-    console.log('Componet Mount Is Call')
+    
     this.timerID = setInterval(this.tick, 1000)
   }
 
   componentWillUnmount() {
-    console.log('Component Will Unmount')
+   
     clearInterval(this.timerID)
   }
 
@@ -23,7 +23,7 @@ class Clock extends Component {
 
   render() {
     const {date} = this.state
-    console.log(date)
+    
 
     return (
       <div className="clock-container">
